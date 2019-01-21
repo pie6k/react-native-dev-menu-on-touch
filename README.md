@@ -12,6 +12,7 @@ Wrap entire app inside this component
 
 ```jsx
 import DevMenuOnTouch from 'react-native-dev-menu-on-touch';
+// or:  import { DevMenuOnTouch } from 'react-native-dev-menu-on-touch'
 
 class YourRootApp extends Component {
   render() {
@@ -22,6 +23,13 @@ class YourRootApp extends Component {
     );
   }
 }
+```
+
+### Use with higher order component
+
+```jsx
+import { withDevMenuOnTouch } from 'react-native-dev-menu-on-touch';
+const YourAppRoot = withDevMenuOnTouch(YourApp);
 ```
 
 ## Notes

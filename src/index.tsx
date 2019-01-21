@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, ComponentType } from 'react';
 import { NativeModules, PanResponder, View } from 'react-native';
 
-export default class DevMenuOnTouch extends Component {
+export class DevMenuOnTouch extends Component {
   private panResponder = PanResponder.create({
     onStartShouldSetPanResponder: (evt, gestureState) => {
       if (gestureState.numberActiveTouches === 3) {
@@ -11,22 +11,29 @@ export default class DevMenuOnTouch extends Component {
     },
   });
 
-  private getPanHandlers = () => {
-    if (__DEV__) {
-      return {};
-    }
-    return this.panResponder.panHandlers;
-  };
-
   public render() {
     const { children } = this.props;
 
-    const panHandlers = this.getPanHandlers();
-
+    // return children;
+    const panHandlers = __DEV__ ? this.panResponder.panHandlers : {};
     return (
-      <View style={{ flex: 1 }} {...panHandlers}>
+      <View pointerEvents="box-none" style={{ flex: 1 }} {...panHandlers}>
         {children}
       </View>
     );
   }
 }
+
+export function withDevMenuOnTouch<P>(TargetComponent: ComponentType<P>) {
+  return class WithDevMenuOnTouch extends Component<P> {
+    public render() {
+      return (
+        <DevMenuOnTouch>
+          <TargetComponent {...this.props} />
+        </DevMenuOnTouch>
+      );
+    }
+  };
+}
+
+export default DevMenuOnTouch;
