@@ -4,7 +4,7 @@ Open dev menu with 3 fingers touch instead of shake.
 
 ## Why?
 
-It's annoying to shake real device every time you need dev menu. Especially when you have hot-reloading disabled.
+It's annoying to shake real device every time you need dev menu. Also - it looks quite awkward if you have co-workers sitting next to you and you shake your phone every 2 minutes.
 
 ## How to use
 
