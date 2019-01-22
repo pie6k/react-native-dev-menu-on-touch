@@ -4,6 +4,10 @@
 
 Open dev menu with 3 fingers touch instead of shake.
 
+![shake](https://media0.giphy.com/media/l41Ywr1TS6nV7GsIE/giphy.gif?cid=3640f6095c46cf8b544775586795984a)
+
+ > *when you want to reload the app*
+
 ## Why?
 
 It's annoying to shake real device every time you need dev menu. Also - it looks quite awkward if you have co-workers sitting next to you and you shake your phone every 2 minutes.
