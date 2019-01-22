@@ -31,7 +31,7 @@ class YourRootApp extends Component {
 }
 ```
 
-### Use with higher order component
+or use with higher order component
 
 ```jsx
 import { withDevMenuOnTouch } from 'react-native-dev-menu-on-touch';
