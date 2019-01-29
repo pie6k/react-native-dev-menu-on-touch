@@ -1,6 +1,12 @@
 # react-native-dev-menu-on-touch
 
+[![npm](https://img.shields.io/npm/v/react-native-dev-menu-on-touch.svg)](https://npmjs.com/package/react-native-dev-menu-on-touch)
+
 Open dev menu with 3 fingers touch instead of shake.
+
+![shake](https://media0.giphy.com/media/l41Ywr1TS6nV7GsIE/giphy.gif?cid=3640f6095c46cf8b544775586795984a)
+
+ > *when you want to reload the app*
 
 ## Why?
 
@@ -25,7 +31,7 @@ class YourRootApp extends Component {
 }
 ```
 
-### Use with higher order component
+or use with higher order component
 
 ```jsx
 import { withDevMenuOnTouch } from 'react-native-dev-menu-on-touch';
