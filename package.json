@@ -1,6 +1,6 @@
 {
   "name": "react-native-dev-menu-on-touch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
@@ -8,6 +8,7 @@
     "build": "tsc"
   },
   "peerDependencies": {
+    "react": "^16.7.0",
     "react-native": "^0.57.5"
   },
   "devDependencies": {
