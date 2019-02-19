@@ -1,6 +1,6 @@
 # react-native-devmenu
 
-[![npm](https://img.shields.io/npm/v/react-native-dev-menu-on-touch.svg)](https://npmjs.com/package/@terrysahaidak/sreact-native-devmenu)
+[![npm](https://img.shields.io/npm/v/@terrysahaidak/react-native-devmenu.svg?style=plastic)](https://npmjs.com/package/@terrysahaidak/react-native-devmenu)
 
 > It's iOS only so far.
 
