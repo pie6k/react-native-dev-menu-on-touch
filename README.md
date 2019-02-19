@@ -1,44 +1,39 @@
-# react-native-dev-menu-on-touch
+# react-native-devmenu
 
-[![npm](https://img.shields.io/npm/v/react-native-dev-menu-on-touch.svg)](https://npmjs.com/package/react-native-dev-menu-on-touch)
+[![npm](https://img.shields.io/npm/v/react-native-dev-menu-on-touch.svg)](https://npmjs.com/package/@terrysahaidak/sreact-native-dev-menu-on-touch)
 
-Open dev menu with 3 fingers touch instead of shake.
+> It's iOS only so far.
 
-![shake](https://media0.giphy.com/media/l41Ywr1TS6nV7GsIE/giphy.gif?cid=3640f6095c46cf8b544775586795984a)
+Open developer menu touching instead of shaking your device.
 
- > *when you want to reload the app*
+## Installation
 
-## Why?
+Install the library from npm:
 
-It's annoying to shake real device every time you need dev menu. Also - it looks quite awkward if you have co-workers sitting next to you and you shake your phone every 2 minutes.
-
-## How to use
-
-Wrap entire app inside this component
-
-```jsx
-import DevMenuOnTouch from 'react-native-dev-menu-on-touch';
-// or:  import { DevMenuOnTouch } from 'react-native-dev-menu-on-touch'
-
-class YourRootApp extends Component {
-  render() {
-    return (
-      <DevMenuOnTouch>
-        <YourApp />
-      </DevMenuOnTouch>
-    );
-  }
-}
+```bash
+npm i --save @terrysahaidak/react-native-devmenu
+```
+or
+```bash
+yarn add @terrysahaidak/react-native-devmenu
 ```
 
-or use with higher order component
+## Usage
+
+Wrap your root any any other component you want to recognize you touches to open the dev menu.
+Pass `numberOfTouches` prop to change number of taps (by default it's 3).
+
+It renders children without any wrapper on android and/or production.
 
 ```jsx
-import { withDevMenuOnTouch } from 'react-native-dev-menu-on-touch';
-const YourAppRoot = withDevMenuOnTouch(YourApp);
+import DevMenu from '@terrysahaidak/react-native-devmenu';
+
+const Root = () => (
+  <DevMenuOnTouch numberOfTouches={4}>
+    {/* your app stuff such as providers, navigators etc */}
+  </DevMenuOnTouch>
+);
 ```
 
-## Notes
-
-- It's enabled only in dev mode - in production it'll return normal view without changing anything (so it's safe to use in production)
-- It's inspider by comment of @slicejunk https://github.com/facebook/react-native/issues/10191#issuecomment-277208461
+## License
+[MIT](LICENSE) © Terry Sahaidak 2019

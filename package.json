@@ -1,19 +1,23 @@
 {
-  "name": "react-native-dev-menu-on-touch",
-  "version": "1.0.3",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "name": "@terrysahaidak/react-native-devmenu",
+  "version": "1.0.0",
+  "main": "lib/index.js",
   "license": "MIT",
-  "scripts": {
-    "build": "tsc"
-  },
   "peerDependencies": {
-    "react": "^16.0.0",
-    "react-native": "^0.57.5"
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "prop-types": "15.7.2"
   },
   "devDependencies": {
-    "@types/react": "^16.7.20",
-    "@types/react-native": "^0.57.12",
-    "typescript": "^3.1.6"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.2.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-formatter-pretty": "^1.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-react-native": "^3.1.0"
   }
 }
