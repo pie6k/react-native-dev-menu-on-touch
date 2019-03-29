@@ -2,9 +2,9 @@
 
 [![npm](https://img.shields.io/npm/v/@terrysahaidak/react-native-devmenu.svg?style=plastic)](https://npmjs.com/package/@terrysahaidak/react-native-devmenu)
 
-> It's iOS only so far.
+> It's iOS only so far :(
 
-Open developer menu touching instead of shaking your device.
+Open developer menu using touches instead of shaking your device.
 
 ## Installation
 
