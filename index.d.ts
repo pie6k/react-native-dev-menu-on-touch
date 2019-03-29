@@ -1,15 +1,9 @@
-declare module "react-native-devmenu" {
+declare module "@terrysahaidak/react-native-devmenu" {
   import * as React from 'react';
-
-  const defaultProps = {
-    numberOfTouches: 3,
-  }
 
   interface DevMenuProps {
     numberOfTouches?: number
   }
-
-  type Props = DevMenuProps & typeof defaultProps;
   
-  export default class DevMenu extends React.Component<Props, any>{}
+  export default class DevMenu extends React.Component<DevMenuProps, any>{}
 }
