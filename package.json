@@ -1,7 +1,12 @@
 {
   "name": "@terrysahaidak/react-native-devmenu",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "lib/index.js",
+  "author": {
+    "email": "terry@sahaidak.com",
+    "name": "Terry Sahaidak",
+    "url": "sahaidak.com"
+  },
   "license": "MIT",
   "peerDependencies": {
     "react": "*",
